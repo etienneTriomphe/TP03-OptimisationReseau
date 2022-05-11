@@ -153,12 +153,12 @@ def question_39(nr):
     """
     
 def question_40(nr):
-    """
+    
     result = nr.filter(device_type = "router",building = "A").run(task=netmiko_send_config, config_commands=["router ospf 1","network 172.16.10.0 0.0.0.255 area 0", "network 172.16.20.0 0.0.0.255 area 0"])
     print_result(result)
     result = nr.filter(device_type = "router",building = "B").run(task=netmiko_send_config, config_commands=["router ospf 1","network 172.16.30.0 0.0.0.255 area 0", "network 172.16.40.0 0.0.0.255 area 0"])
     print_result(result)
-    """
+    
     result = nr.run(task=netmiko_save_config)
     print_result(result)
 
