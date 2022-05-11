@@ -1,0 +1,35 @@
+{    
+    "vlans":[
+    {
+        "id":"10",
+        "name":"teacher"
+    },
+    {
+        "id":"20",
+        "name":"student"
+    }
+    ],
+    "interfaces":[
+        {
+            "name":"fa1/14",
+            "mode":"trunk",
+            "allowed_vlan":"10,20"
+        }, 
+        {
+            "name":"fa1/15",
+            "mode":"trunk",
+            "allowed_vlan":"10,20"
+        }, 
+        {
+            "name":"fa1/1",
+            "vlan_id":"10",
+            "mode":"access"
+        },       
+        {
+            "name":"fa1/2",
+            "vlan_id":"20",
+            "mode":"access"
+        }
+    ]
+
+}
